@@ -12,7 +12,9 @@ int main()
 {
 	//variables
 	string usersName;
+	string usersChoice;
 	int planetChoice;
+	double percentageIlluminated;
 
 	// Header
 	cout << "Lance Zotigh" << endl;
@@ -25,7 +27,7 @@ int main()
 
 	do 
 	{
-		cout << "\nPlease select a color from the menu you would like to use by typing the desired colors corresponding number and pressing" << endl
+		cout << "\nPlease select a planet from the menu you would like to use by typing the desired colors corresponding number and pressing" << endl
 			<< "enter on the keyoard or type 6 and press enter on the keyoard to quit the program:" << endl
 			<< "\n1 = MERCURY" << endl
 			<< "2 = MARS" << endl
@@ -37,13 +39,22 @@ int main()
 		cin >> planetChoice;
 		cin.ignore();
 
-		if(planetChoice <= 0 && planetChoice >= 7)
+		while(planetChoice <= 0 || planetChoice >= 7)
 		{
 			cout << "Selection not within the range of options";
-		}
+			cout << "Do you want to calculate another question?" << endl;
+			cin >> planetChoice;
+			cin.ignore();
+		} 
+
+		cout << "What is the percentage of the face that is illuminated: ";
+		cin >> percentageIlluminated;
+		cin.ignore();
+		
+		
 		
 
-	} while ();
+	} while (0);
 
 
 }
