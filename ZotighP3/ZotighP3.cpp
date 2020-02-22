@@ -16,12 +16,12 @@ int main()
 
 	//vectors
 	vector<int> radiOfPlanets;
-	radiOfPlanets.push_back(2440);// Mercury[1]
-	radiOfPlanets.push_back(3397);// Mars[2]
-	radiOfPlanets.push_back(6052);// Venus[3]
-	radiOfPlanets.push_back(60268);// Saturn[4]
-	radiOfPlanets.push_back(71492);// Jupiter[5]
-	radiOfPlanets.push_back(1738);// The Moon[6]
+	radiOfPlanets.push_back(2440);// Mercury[0]
+	radiOfPlanets.push_back(3397);// Mars[1]
+	radiOfPlanets.push_back(6052);// Venus[2]
+	radiOfPlanets.push_back(60268);// Saturn[3]
+	radiOfPlanets.push_back(71492);// Jupiter[4]
+	radiOfPlanets.push_back(1738);// The Moon[5]
 
 	string usersName;
 	string usersChoice;
