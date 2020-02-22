@@ -41,7 +41,7 @@ int main()
 
 	do 
 	{
-		cout << "\nPlease select a planet from the menu you would like to use by typing the desired colors corresponding number and pressing" << endl
+		cout << "\nPlease select a planet from the menu you would like to use by typing the desired colors corresponding number and pressing enter" << endl
 			<< "\n1 = MERCURY" << endl
 			<< "2 = MARS" << endl
 			<< "3 = VENUS" << endl
