@@ -51,7 +51,13 @@ int main()
 		cin >> percentageIlluminated;
 		cin.ignore();
 		
-		
+		while (percentageIlluminated >= 0 && percentageIlluminated <= 100) 
+		{
+			cout << "number entered is not in range" << endl;
+			cout << "Do you want to calculate another question.”.   "
+			cin >> percentageIlluminated;
+			cin.ignore();
+		}
 		
 
 	} while (0);
