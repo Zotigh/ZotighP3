@@ -14,19 +14,21 @@ int main()
 {
 	//variables
 
+	//vectors
 	vector<int> radiOfPlanets;
-	radiOfPlanets.push_back(2440);
-	radiOfPlanets.push_back(3397);
-	radiOfPlanets.push_back(6052);
-	radiOfPlanets.push_back(60268);
-	radiOfPlanets.push_back(71492);
-	radiOfPlanets.push_back(1738);
+	radiOfPlanets.push_back(2440);// Mercury[1]
+	radiOfPlanets.push_back(3397);// Mars[2]
+	radiOfPlanets.push_back(6052);// Venus[3]
+	radiOfPlanets.push_back(60268);// Saturn[4]
+	radiOfPlanets.push_back(71492);// Jupiter[5]
+	radiOfPlanets.push_back(1738);// The Moon[6]
 
 	string usersName;
 	string usersChoice;
 	int planetChoice;
 	double percentageIlluminated;
 	double loonSurfaceAreaCalculation;
+	string choice;
 
 	// Header
 	cout << "Lance Zotigh" << endl;
@@ -95,7 +97,7 @@ int main()
 		{
 			cout << "\n" << usersName << " you chose Venus " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[3] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[3] * 2 * Theta << "km" << endl;
 		} 
 		else if (planetChoice = 4)
 		{
@@ -116,10 +118,12 @@ int main()
 				<< " the surface are of the loon is: " << radiOfPlanets[6] * 2 * Theta << "km" << endl;
 		}
 
+		cout << "Calculate another? (y/n); ";
+		cin >> choice;
 
-		//loonSurfaceAreaCalculation = 2 * find r * Theta;
- 
-	} while (0);
+	} while (choice != "n");
 
+	cout << "Thank you for using my program, Good bye for now." << endl;
 
+	return 0;
 }
