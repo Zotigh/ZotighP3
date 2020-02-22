@@ -42,7 +42,6 @@ int main()
 	do 
 	{
 		cout << "\nPlease select a planet from the menu you would like to use by typing the desired colors corresponding number and pressing" << endl
-			<< "enter on the keyoard or type 6 and press enter on the keyoard to quit the program:" << endl
 			<< "\n1 = MERCURY" << endl
 			<< "2 = MARS" << endl
 			<< "3 = VENUS" << endl
@@ -88,36 +87,37 @@ int main()
 		double thetaxto = 2 * theta;
 
 
-		if (planetChoice = 1) 
+		if (planetChoice == 1) 
 		{
 			cout << "\n" << usersName << " you chose Mercury " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[0] << "km"
 				<< " the surface are of the loon is: " << radiOfPlanets[0] * thetaxto << "km" << endl;
-		} else if (planetChoice = 2)
+		} 
+		else if (planetChoice == 2)
 		{
 			cout << "\n" << usersName << " you chose Mars " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[1] << "km"
 				<< " the surface are of the loon is: " << radiOfPlanets[1] * thetaxto << "km" << endl;
 		}  
-		else if (planetChoice = 3)
+		else if (planetChoice == 3)
 		{
 			cout << "\n" << usersName << " you chose Venus " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[2] << "km"
 				<< " the surface are of the loon is: " << radiOfPlanets[2] * thetaxto << "km" << endl;
 		} 
-		else if (planetChoice = 4)
+		else if (planetChoice == 4)
 		{
 			cout << "\n" << usersName << " you chose Saturn " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[3] << "km"
 				<< " the surface are of the loon is: " << radiOfPlanets[3] * thetaxto << "km" << endl;
 		}
-		else if (planetChoice = 5)
+		else if (planetChoice == 5)
 		{
 			cout << "\n" << usersName << " you chose Jupiter " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[4] << "km"
 				<< " the surface are of the loon is: " << radiOfPlanets[4] * thetaxto << "km" << endl;
 		}
-		else if (planetChoice = 6)
+		else if (planetChoice == 6)
 		{
 			cout << "\n" << usersName << " you chose the Moon " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[5] << "km"
