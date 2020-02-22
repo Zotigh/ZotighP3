@@ -29,7 +29,6 @@ int main()
 	string usersChoice;
 	int planetChoice;
 	double percentageIlluminated;
-	//double Theta = percentageIlluminated * pi;
 	double loonSurfaceAreaCalculation;
 
 	// Header
@@ -65,7 +64,7 @@ int main()
 		} 
 
 		// Asks the user for the percent
-		cout << "What is the percentage of the face that is illuminated (ex 100% = 100): ";
+		cout << "\nWhat is the percentage of the face that is illuminated (ex 100% = 100): ";
 		cin >> percentageIlluminated;
 		cin.ignore();
 		
@@ -78,12 +77,17 @@ int main()
 			cin.ignore();
 		}
 		
+		// Converts the percent illuminated to theta
+		double Theta = percentageIlluminated * pi;
+
 		// Makes percent illuminated a decimal
 		percentageIlluminated /= 100;
 
 		if (planetChoice = 1) 
 		{
-		cout << "Mars"
+			cout << "\n" << usersName << " you chose Mars " << "the percent illuminated is " << percentageIlluminated << "%"
+				<< " with a radius of " << radiOfPlanets[1] << "km"
+				<< " the surface are of the loon is: " << radiOfPlanets[1] * 2 * Theta << "km" << endl;
 		}
 
 
