@@ -22,9 +22,6 @@ int main()
 	radiOfPlanets.push_back(71492);
 	radiOfPlanets.push_back(1738);
 
-
-	
-
 	string usersName;
 	string usersChoice;
 	int planetChoice;
@@ -85,9 +82,38 @@ int main()
 
 		if (planetChoice = 1) 
 		{
-			cout << "\n" << usersName << " you chose Mars " << "the percent illuminated is " << percentageIlluminated << "%"
+			cout << "\n" << usersName << " you chose Mercury " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[1] << "km"
 				<< " the surface are of the loon is: " << radiOfPlanets[1] * 2 * Theta << "km" << endl;
+		} else if (planetChoice = 2)
+		{
+			cout << "\n" << usersName << " you chose Mars " << "the percent illuminated is " << percentageIlluminated << "%"
+				<< " with a radius of " << radiOfPlanets[2] << "km"
+				<< " the surface are of the loon is: " << radiOfPlanets[2] * 2 * Theta << "km" << endl;
+		}  
+		else if (planetChoice = 3)
+		{
+			cout << "\n" << usersName << " you chose Venus " << "the percent illuminated is " << percentageIlluminated << "%"
+				<< " with a radius of " << radiOfPlanets[3] << "km"
+				<< " the surface are of the loon is: " << radiOfPlanets[] * 2 * Theta << "km" << endl;
+		} 
+		else if (planetChoice = 4)
+		{
+			cout << "\n" << usersName << " you chose Saturn " << "the percent illuminated is " << percentageIlluminated << "%"
+				<< " with a radius of " << radiOfPlanets[4] << "km"
+				<< " the surface are of the loon is: " << radiOfPlanets[4] * 2 * Theta << "km" << endl;
+		}
+		else if (planetChoice = 5)
+		{
+			cout << "\n" << usersName << " you chose Jupiter " << "the percent illuminated is " << percentageIlluminated << "%"
+				<< " with a radius of " << radiOfPlanets[5] << "km"
+				<< " the surface are of the loon is: " << radiOfPlanets[5] * 2 * Theta << "km" << endl;
+		}
+		else if (planetChoice = 6)
+		{
+			cout << "\n" << usersName << " you chose the Moon " << "the percent illuminated is " << percentageIlluminated << "%"
+				<< " with a radius of " << radiOfPlanets[6] << "km"
+				<< " the surface are of the loon is: " << radiOfPlanets[6] * 2 * Theta << "km" << endl;
 		}
 
 
