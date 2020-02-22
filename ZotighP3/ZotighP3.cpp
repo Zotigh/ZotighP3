@@ -32,8 +32,8 @@ int main()
 
 	// Header
 	cout << "Lance Zotigh" << endl;
+	cout << "Project calculate a Lune" << endl;
 	cout << "Pourpose: a program to calculate the surface area of segments of the five planets that you can see from the earth with the unaided eye and of the moon" << endl;
-	cout << "Calculating a Lune" << endl;
 
 	// asks user for name
 	cout << "Please enter you name: ";
@@ -76,46 +76,52 @@ int main()
 			cin.ignore();
 		}
 		
+		//This is where all my calculations are done for the most part:
+
 		// Converts the percent illuminated to theta
-		double Theta = percentageIlluminated * pi;
+		double theta = percentageIlluminated * pi;
 
 		// Makes percent illuminated a decimal
 		percentageIlluminated /= 100;
+
+		// Calculates the 2 * theta so there is no need to repeat
+		double thetaxto = 2 * theta;
+
 
 		if (planetChoice = 1) 
 		{
 			cout << "\n" << usersName << " you chose Mercury " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[1] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[1] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[1] * thetaxto << "km" << endl;
 		} else if (planetChoice = 2)
 		{
 			cout << "\n" << usersName << " you chose Mars " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[2] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[2] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[2] * thetaxto << "km" << endl;
 		}  
 		else if (planetChoice = 3)
 		{
 			cout << "\n" << usersName << " you chose Venus " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[3] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[3] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[3] * thetaxto << "km" << endl;
 		} 
 		else if (planetChoice = 4)
 		{
 			cout << "\n" << usersName << " you chose Saturn " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[4] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[4] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[4] * thetaxto << "km" << endl;
 		}
 		else if (planetChoice = 5)
 		{
 			cout << "\n" << usersName << " you chose Jupiter " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[5] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[5] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[5] * thetaxto << "km" << endl;
 		}
 		else if (planetChoice = 6)
 		{
 			cout << "\n" << usersName << " you chose the Moon " << "the percent illuminated is " << percentageIlluminated << "%"
 				<< " with a radius of " << radiOfPlanets[6] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[6] * 2 * Theta << "km" << endl;
+				<< " the surface are of the loon is: " << radiOfPlanets[6] * thetaxto << "km" << endl;
 		}
 
 		cout << "Calculate another? (y/n); ";
