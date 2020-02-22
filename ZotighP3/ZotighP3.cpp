@@ -13,11 +13,24 @@ const double pi = 3.14159;
 int main()
 {
 	//variables
-	vector<string> namesOfPlanets;
+
+	vector<int> radiOfPlanets;
+	radiOfPlanets.push_back(2440);
+	radiOfPlanets.push_back(3397);
+	radiOfPlanets.push_back(6052);
+	radiOfPlanets.push_back(60268);
+	radiOfPlanets.push_back(71492);
+	radiOfPlanets.push_back(1738);
+
+
+	
+
 	string usersName;
 	string usersChoice;
 	int planetChoice;
 	double percentageIlluminated;
+	//double Theta = percentageIlluminated * pi;
+	double loonSurfaceAreaCalculation;
 
 	// Header
 	cout << "Lance Zotigh" << endl;
@@ -68,9 +81,14 @@ int main()
 		// Makes percent illuminated a decimal
 		percentageIlluminated /= 100;
 
-		cout << percentageIlluminated;
+		if (planetChoice = 1) 
+		{
+		cout << "Mars"
+		}
 
 
+		//loonSurfaceAreaCalculation = 2 * find r * Theta;
+ 
 	} while (0);
 
 
