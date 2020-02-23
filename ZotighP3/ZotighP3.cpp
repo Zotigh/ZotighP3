@@ -17,10 +17,16 @@ using namespace std;
 const double pi = 3.14159;
 
 int main()
-{
-	//variables
+{	
+    // variables
+	string usersName;
+	string usersChoice;
+	int planetChoice;
+	double percentageIlluminated;
+	double loonSurfaceAreaCalculation;
+	string choice;
 
-	//vectors
+	// vector
 	vector<int> radiOfPlanets;
 	radiOfPlanets.push_back(2440);// Mercury[0]
 	radiOfPlanets.push_back(3397);// Mars[1]
@@ -28,13 +34,6 @@ int main()
 	radiOfPlanets.push_back(60268);// Saturn[3]
 	radiOfPlanets.push_back(71492);// Jupiter[4]
 	radiOfPlanets.push_back(1738);// The Moon[5]
-
-	string usersName;
-	string usersChoice;
-	int planetChoice;
-	double percentageIlluminated;
-	double loonSurfaceAreaCalculation;
-	string choice;
 
 	// Header
 	cout << "Lance Zotigh" << endl;
@@ -81,7 +80,7 @@ int main()
 			cin.ignore();
 		}
 		
-		//This is where all my calculations are done for the most part:
+		// This is where almost all my calculations are done for the most part:
 
 		// Converts the percent illuminated to theta
 		double theta = percentageIlluminated * pi;
@@ -92,55 +91,57 @@ int main()
 		// Calculates the 2 * theta so there is no need to repeat
 		double thetaTo = 2 * theta;
 
-
+		// If statements to handle choice output
 		if (planetChoice == 1) 
 		{
 			cout << "\n" << usersName << " you chose Mercury" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[0] << "km"
 				<< "\nthe surface are of the loon is: " << radiOfPlanets[0] * thetaTo << "km" << endl;
 		} 
 		else if (planetChoice == 2)
 		{
 			cout << "\n" << usersName << " you chose Mars" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[1] << "km"
 				<< "\nthe surface area of the loon is: " << radiOfPlanets[1] * thetaTo << "km" << endl;
 		}  
 		else if (planetChoice == 3)
 		{
 			cout << "\n" << usersName << " you chose Venus" 
-				<< "the percent illuminated is: " << percentageIlluminated << "%"
+				<< "the percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[2] << "km"
 				<< "\nthe surface area of the loon is: " << radiOfPlanets[2] * thetaTo << "km" << endl;
 		} 
 		else if (planetChoice == 4)
 		{
 			cout << "\n" << usersName << " you chose Saturn" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[3] << "km"
 				<< "\nthe surface area of the loon is: " << radiOfPlanets[3] * thetaTo << "km" << endl;
 		}
 		else if (planetChoice == 5)
 		{
 			cout << "\n" << usersName << " you chose Jupiter" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[4] << "km"
 				<< "\nthe surface area of the loon is: " << radiOfPlanets[4] * thetaTo << "km" << endl;
 		}
 		else if (planetChoice == 6)
 		{
 			cout << "\n" << usersName << " you chose the Moon"
-				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[5] << "km"
 				<< "\nthe surface area of the loon is: " << radiOfPlanets[5] * thetaTo << "km" << endl;
 		}
 
+		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
 
 	} while (choice != "n");
 
+	// Exit message
 	cout << "Thank you for using my program, Good bye for now." << endl;
 
 	return 0;
