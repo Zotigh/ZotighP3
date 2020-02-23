@@ -1,6 +1,12 @@
 // ZotighP3.cpp
 // Lance Zotigh (lzotigh1@cnm.edu)
 
+// TODO Work on Format your output to have 0 decimal places. 
+// Be sure to include the units where they are appropriate.  
+// Imbue your cout stream with the default location so you can use comma separators 
+// for thousands.
+
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -41,7 +47,7 @@ int main()
 
 	do 
 	{
-		cout << "\nPlease select a planet from the menu you would like to use by typing the desired colors corresponding number and pressing enter" << endl
+		cout << "\nPlease select a planet from the menu you would like to use by typing the desired planets corresponding number and pressing enter" << endl
 			<< "\n1 = MERCURY" << endl
 			<< "2 = MARS" << endl
 			<< "3 = VENUS" << endl
@@ -62,7 +68,7 @@ int main()
 		} 
 
 		// Asks the user for the percent
-		cout << "\nWhat is the percentage of the face that is illuminated (ex 100% = 100): ";
+		cout << "\nWhat is the percentage of the face that is illuminated (ex for 100% enter 100): ";
 		cin >> percentageIlluminated;
 		cin.ignore();
 		
@@ -84,47 +90,53 @@ int main()
 		percentageIlluminated /= 100;
 
 		// Calculates the 2 * theta so there is no need to repeat
-		double thetaxto = 2 * theta;
+		double thetaTo = 2 * theta;
 
 
 		if (planetChoice == 1) 
 		{
-			cout << "\n" << usersName << " you chose Mercury " << "the percent illuminated is " << percentageIlluminated << "%"
-				<< " with a radius of " << radiOfPlanets[0] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[0] * thetaxto << "km" << endl;
+			cout << "\n" << usersName << " you chose Mercury" 
+				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nwith a radius of: " << radiOfPlanets[0] << "km"
+				<< "\nthe surface are of the loon is: " << radiOfPlanets[0] * thetaTo << "km" << endl;
 		} 
 		else if (planetChoice == 2)
 		{
-			cout << "\n" << usersName << " you chose Mars " << "the percent illuminated is " << percentageIlluminated << "%"
-				<< " with a radius of " << radiOfPlanets[1] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[1] * thetaxto << "km" << endl;
+			cout << "\n" << usersName << " you chose Mars" 
+				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nwith a radius of: " << radiOfPlanets[1] << "km"
+				<< "\nthe surface area of the loon is: " << radiOfPlanets[1] * thetaTo << "km" << endl;
 		}  
 		else if (planetChoice == 3)
 		{
-			cout << "\n" << usersName << " you chose Venus " << "the percent illuminated is " << percentageIlluminated << "%"
-				<< " with a radius of " << radiOfPlanets[2] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[2] * thetaxto << "km" << endl;
+			cout << "\n" << usersName << " you chose Venus" 
+				<< "the percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nwith a radius of: " << radiOfPlanets[2] << "km"
+				<< "\nthe surface area of the loon is: " << radiOfPlanets[2] * thetaTo << "km" << endl;
 		} 
 		else if (planetChoice == 4)
 		{
-			cout << "\n" << usersName << " you chose Saturn " << "the percent illuminated is " << percentageIlluminated << "%"
-				<< " with a radius of " << radiOfPlanets[3] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[3] * thetaxto << "km" << endl;
+			cout << "\n" << usersName << " you chose Saturn" 
+				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nwith a radius of: " << radiOfPlanets[3] << "km"
+				<< "\nthe surface area of the loon is: " << radiOfPlanets[3] * thetaTo << "km" << endl;
 		}
 		else if (planetChoice == 5)
 		{
-			cout << "\n" << usersName << " you chose Jupiter " << "the percent illuminated is " << percentageIlluminated << "%"
-				<< " with a radius of " << radiOfPlanets[4] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[4] * thetaxto << "km" << endl;
+			cout << "\n" << usersName << " you chose Jupiter" 
+				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nwith a radius of: " << radiOfPlanets[4] << "km"
+				<< "\nthe surface area of the loon is: " << radiOfPlanets[4] * thetaTo << "km" << endl;
 		}
 		else if (planetChoice == 6)
 		{
-			cout << "\n" << usersName << " you chose the Moon " << "the percent illuminated is " << percentageIlluminated << "%"
-				<< " with a radius of " << radiOfPlanets[5] << "km"
-				<< " the surface are of the loon is: " << radiOfPlanets[5] * thetaxto << "km" << endl;
+			cout << "\n" << usersName << " you chose the Moon"
+				<< "\nthe percent illuminated is: " << percentageIlluminated << "%"
+				<< "\nwith a radius of: " << radiOfPlanets[5] << "km"
+				<< "\nthe surface area of the loon is: " << radiOfPlanets[5] * thetaTo << "km" << endl;
 		}
 
-		cout << "Calculate another? (y/n); ";
+		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
 
 	} while (choice != "n");
