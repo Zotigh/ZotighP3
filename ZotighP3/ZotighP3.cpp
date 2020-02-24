@@ -27,7 +27,13 @@ int main()
 	string choice;
 
 	// vector
-	vector<int>;
+	vector<string> namesOfPlanets;
+	namesOfPlanets.push_back("Mercury");
+	namesOfPlanets.push_back("Mars");
+	namesOfPlanets.push_back("Venus");
+	namesOfPlanets.push_back("Saturn");
+	namesOfPlanets.push_back("Jupiter");
+	namesOfPlanets.push_back("The Moon");
 
 	// vector
 	vector<int> radiOfPlanets;
