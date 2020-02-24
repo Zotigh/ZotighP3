@@ -28,12 +28,12 @@ int main()
 
 	// vector
 	vector<string> namesOfPlanets;
-	namesOfPlanets.push_back("Mercury");
-	namesOfPlanets.push_back("Mars");
-	namesOfPlanets.push_back("Venus");
-	namesOfPlanets.push_back("Saturn");
-	namesOfPlanets.push_back("Jupiter");
-	namesOfPlanets.push_back("The Moon");
+	namesOfPlanets.push_back("Mercury");// Mercury[0]
+	namesOfPlanets.push_back("Mars");// Mars[1]
+	namesOfPlanets.push_back("Venus");// Venus[2]
+	namesOfPlanets.push_back("Saturn");// Saturn[3]
+	namesOfPlanets.push_back("Jupiter");// Jupiter[4]
+	namesOfPlanets.push_back("The Moon");// The Moon[5]
 
 	// vector
 	vector<int> radiOfPlanets;
