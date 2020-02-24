@@ -12,13 +12,22 @@ using namespace std;
 const double pi = 3.14159;
 
 int main()
-{	
+{
+	int Get_Number();
+	int x;
+	x = Get_Number();
+	cout << x << endl;
+
+
     // variables
 	string usersName;
 	string usersChoice;
 	int planetChoice;
 	double percentageIlluminated;
 	string choice;
+
+	// vector
+	vector<int>;
 
 	// vector
 	vector<int> radiOfPlanets;
@@ -58,6 +67,8 @@ int main()
 			<< "\nYour Response: ";
 		cin >> planetChoice;
 		cin.ignore();
+
+		cout << radiOfPlanets << endl;
 
 		// Checks to make sure the user is with in the correct threshold
 		while(planetChoice <= 0 || planetChoice >= 7)
