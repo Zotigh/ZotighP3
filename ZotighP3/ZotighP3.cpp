@@ -102,7 +102,7 @@ int main()
 				<< "\nthe surface are of the loon is: " << radiOfPlanets[0] * thetaTo << "km" << endl;
 		} 
 		else if (planetChoice == 2)
-		{7
+		{
 			cout << "\n" << usersName << " you chose Mars" 
 				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[1] << "km"
