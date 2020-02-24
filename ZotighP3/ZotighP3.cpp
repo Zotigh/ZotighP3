@@ -68,8 +68,6 @@ int main()
 		cin >> planetChoice;
 		cin.ignore();
 
-		cout << radiOfPlanets << endl;
-
 		// Checks to make sure the user is with in the correct threshold
 		while(planetChoice <= 0 || planetChoice >= 7)
 		{
