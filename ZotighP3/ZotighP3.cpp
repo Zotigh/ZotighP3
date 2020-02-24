@@ -36,7 +36,9 @@ int main()
 	radiOfPlanets.push_back(1738);// The Moon[5]
 
 	// Not sure if this is what you mean by set to zero decimal places
+	// set fixed and precison
 	cout.setf(ios::fixed);
+	//set precision
 	cout.precision(0);
 
 	// Course Header
