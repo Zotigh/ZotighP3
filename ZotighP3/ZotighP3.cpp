@@ -1,11 +1,6 @@
 // ZotighP3.cpp
 // Lance Zotigh (lzotigh1@cnm.edu)
 
-// TODO Work on Format your output to have 0 decimal places. 
-// Be sure to include the units where they are appropriate.  
-// Imbue your cout stream with the default location so you can use comma separators 
-// for thousands.
-
 
 #include <iostream>
 #include <vector>
@@ -23,7 +18,6 @@ int main()
 	string usersChoice;
 	int planetChoice;
 	double percentageIlluminated;
-	//double loonSurfaceAreaCalculation;
 	string choice;
 
 	// vector
@@ -108,7 +102,7 @@ int main()
 				<< "\nthe surface are of the loon is: " << radiOfPlanets[0] * thetaTo << "km" << endl;
 		} 
 		else if (planetChoice == 2)
-		{
+		{7
 			cout << "\n" << usersName << " you chose Mars" 
 				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 				<< "\nwith a radius of: " << radiOfPlanets[1] << "km"
