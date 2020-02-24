@@ -23,7 +23,7 @@ int main()
 	string usersChoice;
 	int planetChoice;
 	double percentageIlluminated;
-	double loonSurfaceAreaCalculation;
+	//double loonSurfaceAreaCalculation;
 	string choice;
 
 	// vector
@@ -34,6 +34,10 @@ int main()
 	radiOfPlanets.push_back(60268);// Saturn[3]
 	radiOfPlanets.push_back(71492);// Jupiter[4]
 	radiOfPlanets.push_back(1738);// The Moon[5]
+
+	// Not sure if this is what you mean by set to zero decimal places
+	cout.setf(ios::fixed);
+	cout.precision(0);
 
 	// Course Header
 	cout << "Lance Zotigh" << endl;
@@ -90,7 +94,7 @@ int main()
 		// Converts the percent illuminated to theta
 		double theta = percentageIlluminated * pi;
 
-		// Calculates the 2 * theta so there is no need to repeat
+		// Calculates the (2 * theta) so there is no need to repeat
 		double thetaTo = 2 * theta;
 
 		// If statements to handle choice output
