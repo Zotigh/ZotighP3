@@ -35,7 +35,7 @@ int main()
 	radiOfPlanets.push_back(71492);// Jupiter[4]
 	radiOfPlanets.push_back(1738);// The Moon[5]
 
-	// Header
+	// Course Header
 	cout << "Lance Zotigh" << endl;
 	cout << "Project calculate a Lune" << endl;
 	cout << "Pourpose: a program to calculate the surface area of segments of the five planets that you can see from the earth with the unaided eye and of the moon" << endl;
@@ -44,6 +44,8 @@ int main()
 	cout << "\nPlease enter you name: ";
 	cin >> usersName;
 
+
+	// Do while play loop
 	do 
 	{
 		cout << "\nPlease select a planet from the menu you would like to use by typing the desired planets corresponding number and pressing enter" << endl
@@ -82,11 +84,11 @@ int main()
 		
 		// This is where almost all my calculations are done for the most part:
 
-		// Converts the percent illuminated to theta
-		double theta = percentageIlluminated * pi;
-
 		// Makes percent illuminated a decimal
 		percentageIlluminated /= 100;
+
+		// Converts the percent illuminated to theta
+		double theta = percentageIlluminated * pi;
 
 		// Calculates the 2 * theta so there is no need to repeat
 		double thetaTo = 2 * theta;
