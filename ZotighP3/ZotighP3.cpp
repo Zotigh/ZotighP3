@@ -13,12 +13,6 @@ const double pi = 3.14159;
 
 int main()
 {
-	int Get_Number();
-	int x;
-	x = Get_Number();
-	cout << x << endl;
-
-
     // variables
 	string usersName;
 	string usersChoice;
