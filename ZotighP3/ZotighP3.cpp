@@ -13,7 +13,7 @@ const double pi = 3.14159;
 
 int main()
 {
-    // variables
+	// variables
 	string usersName;
 	string usersChoice;
 	int planetChoice;
@@ -53,9 +53,8 @@ int main()
 	cout << "\nPlease enter you name: ";
 	cin >> usersName;
 
-
 	// Do while play loop
-	do 
+	do
 	{
 		cout << "\nPlease select a planet from the menu you would like to use by typing the desired planets corresponding number and pressing enter" << endl
 			<< "\n1 = MERCURY" << endl
@@ -69,28 +68,28 @@ int main()
 		cin.ignore();
 
 		// Checks to make sure the user is with in the correct threshold
-		while(planetChoice <= 0 || planetChoice >= 7)
+		while (planetChoice <= 0 || planetChoice >= 7)
 		{
-			cout << "Selection not within the range of options";
-			cout << "Do you want to calculate another question?" << endl;
+			cout << "Selection not within the range of options" << endl;
+			cout << "Please enter a valid option: ";
 			cin >> planetChoice;
 			cin.ignore();
-		} 
+		}
 
 		// Asks the user for the percent
 		cout << "\nWhat is the percentage of the face that is illuminated (ex for 100% enter 100): ";
 		cin >> percentageIlluminated;
 		cin.ignore();
-		
+
 		// Checks to make sure the user is with in the correct threshold
-		while (percentageIlluminated <= 0 || percentageIlluminated >= 100) 
+		while (percentageIlluminated <= 0 || percentageIlluminated >= 101)
 		{
 			cout << "number entered is not in range" << endl;
-			cout << "Do you want to calculate another question";
+			cout << "Please enter a percentage that is within range: ";
 			cin >> percentageIlluminated;
 			cin.ignore();
 		}
-		
+
 		// This is where almost all my calculations are done for the most part:
 
 		// Makes percent illuminated a decimal
@@ -106,8 +105,8 @@ int main()
 		cout << "\n" << usersName << " you chose " << namesOfPlanets[planetChoice - 1]
 			<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 			<< "\nwith a radius of: " << radiOfPlanets[planetChoice - 1] << "km"
-			<< "\nthe surface are of the loon is: " << radiOfPlanets[planetChoice -1] * thetaTo << "km" << endl;
-	
+			<< "\nthe surface are of the loon is: " << radiOfPlanets[planetChoice - 1] * thetaTo << "km" << endl;
+
 		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
