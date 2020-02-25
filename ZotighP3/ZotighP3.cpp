@@ -102,49 +102,12 @@ int main()
 		// Calculates the (2 * theta) so there is no need to repeat
 		double thetaTo = 2 * theta;
 
-		// If statements to handle choice output
-		if (planetChoice == 1) 
-		{
-			cout << "\n" << usersName << " you chose Mercury" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
-				<< "\nwith a radius of: " << radiOfPlanets[0] << "km"
-				<< "\nthe surface are of the loon is: " << radiOfPlanets[0] * thetaTo << "km" << endl;
-		} 
-		else if (planetChoice == 2)
-		{
-			cout << "\n" << usersName << " you chose Mars" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
-				<< "\nwith a radius of: " << radiOfPlanets[1] << "km"
-				<< "\nthe surface area of the loon is: " << radiOfPlanets[1] * thetaTo << "km" << endl;
-		}  
-		else if (planetChoice == 3)
-		{
-			cout << "\n" << usersName << " you chose Venus" 
-				<< "the percent illuminated is: " << percentageIlluminated * 100 << "%"
-				<< "\nwith a radius of: " << radiOfPlanets[2] << "km"
-				<< "\nthe surface area of the loon is: " << radiOfPlanets[2] * thetaTo << "km" << endl;
-		} 
-		else if (planetChoice == 4)
-		{
-			cout << "\n" << usersName << " you chose Saturn" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
-				<< "\nwith a radius of: " << radiOfPlanets[3] << "km"
-				<< "\nthe surface area of the loon is: " << radiOfPlanets[3] * thetaTo << "km" << endl;
-		}
-		else if (planetChoice == 5)
-		{
-			cout << "\n" << usersName << " you chose Jupiter" 
-				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
-				<< "\nwith a radius of: " << radiOfPlanets[4] << "km"
-				<< "\nthe surface area of the loon is: " << radiOfPlanets[4] * thetaTo << "km" << endl;
-		}
-		else if (planetChoice == 6)
-		{
-			cout << "\n" << usersName << " you chose the Moon"
-				<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
-				<< "\nwith a radius of: " << radiOfPlanets[5] << "km"
-				<< "\nthe surface area of the loon is: " << radiOfPlanets[5] * thetaTo << "km" << endl;
-		}
+		// Takes care of the out put to the user
+		cout << "\n" << usersName << " you chose " << namesOfPlanets[planetChoice - 1]
+			<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
+			<< "\nwith a radius of: " << radiOfPlanets[planetChoice - 1] << "km"
+			<< "\nthe surface are of the loon is: " << radiOfPlanets[planetChoice -1] * thetaTo << "km" << endl;
+
 
 		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
