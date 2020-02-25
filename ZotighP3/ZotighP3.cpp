@@ -112,8 +112,7 @@ int main()
 		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
-
-	} while (choice != "n");
+	} while (choice != "n" && choice == "y");
 
 	// Exit message
 	cout << "Thank you for using my program, Good bye for now." << endl;
