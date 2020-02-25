@@ -110,6 +110,14 @@ int main()
 		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
+
+		while (choice != "n" && choice != "y")
+		{
+			cout << "Not a valid choice." << endl;
+			cout << "Please enter a valid option (y/n): ";
+			cin >> choice;
+		}
+		
 	} while (choice != "n" && choice == "y");
 
 	// Exit message
