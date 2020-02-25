@@ -71,7 +71,7 @@ int main()
 		while (planetChoice <= 0 || planetChoice >= 7)
 		{
 			cout << "Selection not within the range of options" << endl;
-			cout << "Please enter a valid option: ";
+			cout << "Please enter a valid option within range: ";
 			cin >> planetChoice;
 			cin.ignore();
 		}
