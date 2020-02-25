@@ -83,7 +83,7 @@ int main()
 		cin.ignore();
 		
 		// Checks to make sure the user is with in the correct threshold
-		while (percentageIlluminated <= 0 || percentageIlluminated >= 101) 
+		while (percentageIlluminated <= 0 || percentageIlluminated >= 100) 
 		{
 			cout << "number entered is not in range" << endl;
 			cout << "Do you want to calculate another question";
@@ -112,9 +112,9 @@ int main()
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
 	} while (choice != "n" && choice == "y");
-, Good bye for now." << endl;
+
+	// Exit message
+	cout << "Thank you for using my program, Good bye for now." << endl;
 
 	return 0;
-	// Exit message
-	cout << "Thank you for using my program
 }
