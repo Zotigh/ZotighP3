@@ -17,7 +17,7 @@ int main()
 	string usersName;
 	string usersChoice;
 	string choice;
-	int planetChoice;
+	double planetChoice;
 	double percentageIlluminated;
 
 	// vector of stings for the names
@@ -104,8 +104,8 @@ int main()
 		// Takes care of the out put to the user
 		cout << "\n" << usersName << " you chose " << namesOfPlanets[planetChoice - 1]
 			<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
-			<< "\nwith a radius of: " << radiOfPlanets[planetChoice - 1] << " km"
-			<< "\nthe surface are of the loon is: " << radiOfPlanets[planetChoice - 1] * thetaTo << " km" << endl;
+			<< "\nwith a radius of: " << radiOfPlanets[planetChoice - 1] << "km"
+			<< "\nthe surface are of the loon is: " << radiOfPlanets[planetChoice - 1] * thetaTo << "km" << endl;
 
 		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
