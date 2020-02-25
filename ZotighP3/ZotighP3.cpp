@@ -20,7 +20,7 @@ int main()
 	double percentageIlluminated;
 	string choice;
 
-	// vector
+	// vector of stings for the names
 	vector<string> namesOfPlanets;
 	namesOfPlanets.push_back("Mercury");// Mercury[0]
 	namesOfPlanets.push_back("Mars");// Mars[1]
@@ -29,7 +29,7 @@ int main()
 	namesOfPlanets.push_back("Jupiter");// Jupiter[4]
 	namesOfPlanets.push_back("The Moon");// The Moon[5]
 
-	// vector
+	// vector of values for the planets
 	vector<int> radiOfPlanets;
 	radiOfPlanets.push_back(2440);// Mercury[0]
 	radiOfPlanets.push_back(3397);// Mars[1]
@@ -107,15 +107,14 @@ int main()
 			<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 			<< "\nwith a radius of: " << radiOfPlanets[planetChoice - 1] << "km"
 			<< "\nthe surface are of the loon is: " << radiOfPlanets[planetChoice -1] * thetaTo << "km" << endl;
-
-
+	
 		// cout to ask if user wants to go again
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
 	} while (choice != "n" && choice == "y");
-
-	// Exit message
-	cout << "Thank you for using my program, Good bye for now." << endl;
+, Good bye for now." << endl;
 
 	return 0;
+	// Exit message
+	cout << "Thank you for using my program
 }
