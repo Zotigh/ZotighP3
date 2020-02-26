@@ -121,7 +121,7 @@ int main()
 	} while (choice != "n" && choice == "y");
 
 	// Exit message
-	cout << "Thank you for using my program, Good bye for now." << endl;
+	cout << "\nThank you for using my program, Good bye for now." << endl;
 
 	return 0;
 }
