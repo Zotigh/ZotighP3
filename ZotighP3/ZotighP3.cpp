@@ -100,7 +100,7 @@ int main()
 		// Calculates the (2 * theta) so there is no need to repeat
 		double thetaTo = 2 * theta;
 
-		// Takes care of the out put to the user
+		// Takes care of the output to the user
 		cout << "\n" << usersName << " you chose " << namesOfPlanets[planetChoice - 1]
 			<< "\nthe percent illuminated is: " << percentageIlluminated * 100 << "%"
 			<< "\nwith a radius of: " << radiOfPlanets[planetChoice - 1] << "km"
@@ -110,6 +110,7 @@ int main()
 		cout << "\nCalculate another? (y/n); ";
 		cin >> choice;
 
+		// while loop to check validity of users choice to continue
 		while (choice != "n" && choice != "y")
 		{
 			cout << "Not a valid choice." << endl;
