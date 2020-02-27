@@ -17,7 +17,7 @@ int main()
 	string usersName;
 	string usersChoice;
 	string choice;
-	double planetChoice;
+	int planetChoice;
 	double percentageIlluminated;
 
 	// vector of stings for the names
@@ -55,14 +55,24 @@ int main()
 	// Do while play loop
 	do
 	{
-		cout << "\nPlease select a planet from the menu you would like to use by typing the desired planets corresponding number and pressing enter" << endl
-			<< "\n1 = MERCURY" << endl
-			<< "2 = MARS" << endl
-			<< "3 = VENUS" << endl
-			<< "4 = SATURN" << endl
-			<< "5 = JUPITER" << endl
-			<< "6 = THE MOON" << endl
-			<< "\nYour Response: ";
+		cout << "\nPlease select a planet from the menu you would like to use by typing the desired planets corresponding number and pressing enter" << endl;
+
+		for (int i = 0; i <= 5; ++i)
+		{
+				cout << i + 1 << "= " << namesOfPlanets[i] << endl;
+
+			/*cout << "\nPlease select a planet from the menu you would like to use by typing the desired planets corresponding number and pressing enter" << endl
+				<< "\n1 = MERCURY" << endl
+				<< "2 = MARS" << endl
+				<< "3 = VENUS" << endl
+				<< "4 = SATURN" << endl
+				<< "5 = JUPITER" << endl
+				<< "6 = THE MOON" << endl
+				*/			
+		}
+
+		cout << "\nYour Response: " << endl;
+
 		cin >> planetChoice;
 		cin.ignore();
 
