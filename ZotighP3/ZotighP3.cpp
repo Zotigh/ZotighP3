@@ -79,8 +79,10 @@ int main()
 		// Checks to make sure the user is with in the correct threshold
 		while (planetChoice <= 0 || planetChoice >= 7)
 		{
-			cout << "Selection not within the range of options" << endl;
-			cout << "Please enter a valid option within range: ";
+			for (int i = 0; i <= 5; ++i)
+			{
+				cout << i + 1 << "= " << namesOfPlanets[i] << endl;
+			}
 			cin >> planetChoice;
 			cin.ignore();
 		}
