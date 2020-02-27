@@ -59,7 +59,7 @@ int main()
 
 		for (int i = 0; i <= 5; ++i)
 		{
-				cout << i + 1 << "= " << namesOfPlanets[i] << endl;		
+			cout << i + 1 << "= " << namesOfPlanets[i] << endl;		
 		}
 
 		cout << "\nYour Response: " << endl;
