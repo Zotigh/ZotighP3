@@ -17,7 +17,7 @@ int main()
 	string usersName;
 	string usersChoice;
 	string choice;
-	int planetChoice;
+	double planetChoice;
 	double percentageIlluminated;
 
 	// vector of stings for the names
